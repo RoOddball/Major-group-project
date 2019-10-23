@@ -21,7 +21,7 @@
     <input type="text" name = "username" id = "username" placeholder = "Username" minlength="5" maxlength="20" required>
     <br>
     <label for = "password"> Enter Password:</label>
-    <input type="password" name = "password" id ="password" placeholder = "Password"  required>
+    <input type="password" name = "password" id ="password" placeholder = "Password" minlength="8" maxlength="20"  required>
     <br>
     <input type="submit" name = "registerBut"  >
 
