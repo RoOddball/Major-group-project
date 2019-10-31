@@ -15,19 +15,13 @@ include ('simple_html_dom.php');
 $websiteUrl = "https://www.ufc.com/rankings";
 $html = file_get_html($websiteUrl);
 
-$links = array();
+$fighters = array();
 foreach($html->find('div[id]') as $element) {
-    $links[] = $element->plaintext;
+    $fighters[] = $element->plaintext;
 }
 
-print_r($links);
-/*
-foreach ($html->find('.uabb-blog-post-section') as $postDiv)
-{
-    foreach ($postDiv->find( 'a') as $a)
-    {
-        echo $a->attr['href']. "<br>";
+//print_r($links);
 
-    }
-}*/
-echo array_search(12,$links,true);
+$rankings = $fighters[4];
+//$stripped = str_replace(' ', '', $rankings);
+print_r($rankings);
