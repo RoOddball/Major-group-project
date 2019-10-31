@@ -21,7 +21,7 @@
 </ul>
 
 <form action="DisplaySearchResult.php" method="post">
-    <input type="text" name="search" placeholder="MMA event / Fighter">
+    <input type="text" name="search" placeholder="MMA event / Fighter" required>
     <input type="submit" name="submit"></input>
 </form>
 <p>
