@@ -30,7 +30,7 @@ print 'You are logged in as: ' . $_SESSION["usernameEntered"].'.';
 </ul>
 
 <form action="index.php?action=search" method="post">
-    <input type="text" name="search" placeholder="UFC event / Fighter">
+    <input type="text" name="search" placeholder="UFC event / Fighter" required>
     <input type="submit" name="submit"></input>
 </form>
 
