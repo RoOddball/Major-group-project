@@ -9,7 +9,6 @@
 
 include ('simple_html_dom.php');
 
-//$websiteUrl = "http://www.palmbeachcodeschool.com/news/";
 
 
 $websiteUrl = "https://www.ufc.com/rankings";
